@@ -1,15 +1,11 @@
+var logicHarvest = require('logic.harvest');
+
 var roleHarvester = {
 
     /** @param {Creep} creep **/
     run: function(creep) {
-	    if(creep.carry.energy < creep.carryCapacity) {
-            var sources = creep.room.find(FIND_SOURCES);
-            if(!creep.memory.harvestLocation){
-                creep.memory.harvestLocation = 0;
-            }
-            if(creep.harvest(sources[creep.memory.harvestLocation]) == ERR_NOT_IN_RANGE) {
-                creep.moveTo(sources[creep.memory.harvestLocation], {visualizePathStyle: {stroke: '#ffaa00'}});
-            }
+	    if(logicHarvest.run(creep)){
+            ;
         }
         else {
             var targets = creep.room.find(FIND_STRUCTURES, {

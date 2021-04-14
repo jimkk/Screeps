@@ -17,10 +17,10 @@ var loopSpawner = {
         }
         
         typeBuilds = {
-            'harvester': [MOVE, MOVE, CARRY, CARRY, WORK, WORK],
-            'builder': [MOVE, MOVE, CARRY, CARRY, WORK, WORK],
-            'upgrader': [MOVE, CARRY, WORK, WORK, WORK, WORK],
-            'repair': [MOVE, MOVE, CARRY, CARRY, WORK]
+            'harvester': [MOVE, MOVE, MOVE, CARRY, CARRY, WORK, WORK],
+            'builder': [MOVE, MOVE, MOVE, CARRY, CARRY, WORK, WORK],
+            'upgrader': [MOVE, CARRY, WORK, WORK, WORK, WORK, WORK, WORK],
+            'repair': [MOVE, MOVE, MOVE, MOVE, CARRY, CARRY, WORK]
         }
         
         var spawn = Game.spawns['Spawn1']; //bad

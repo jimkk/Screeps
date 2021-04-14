@@ -15,6 +15,7 @@ var roleRepair = {
                     creep.moveTo(sources[0]);
                 }
             } else {
+                creep.memory.startGatherTime = null;
                 creep.memory.repairing = true;
             }
         }
